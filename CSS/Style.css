@@ -2,12 +2,16 @@ BODY {
 	background-color: rgb(199, 238, 255);
 }
 
+input { 
+	display: none;
+}
+
 h1 {
 	text-align: center;
 }
 
 ul {
-	list-style-image: url("../files/1.1.gif");
+	list-style-image: url("../files/1.gif");
 	list-style-position: inside;
 }
 
@@ -15,6 +19,29 @@ ul {
 	font-size: 20px;
 }
 
-.img1 {
-	width: 20px;	
+.div1>input { 
+	display: none;
 }
+
+.div1>div {
+    display: none;
+    background: rgb(255,255,255);
+}
+
+.div1>label {
+    text-align: left;
+    background: rgb(200,200,200);
+    cursor: pointer;
+}
+
+.div1>input:checked + label {
+    background: rgb(255,255,255);
+}
+
+#rad_1:checked ~ #div_1,
+#rad_2:checked ~ #div_2,
+#rad_3:checked ~ #div_3 { 
+	display: inline-block;
+	position: fixed;
+}
+
