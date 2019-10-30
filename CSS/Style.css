@@ -2,6 +2,7 @@ BODY {
 	background-image: url("../files/3.jpg");
 	background-size: 100%;
 	//background-repeat: no-repeat;
+	color: rgb(255,255,255);
 }
 
 input { 
@@ -28,7 +29,8 @@ ul {
 
 .div1 {
 	text-align: center;
-    background: rgba(150, 200, 200, 0.8);
+    background: rgba(0,0,0, 0.8);
+    //background: rgba(150, 200, 200, 0.8);
 	height: 150px;
 	width: 100%;
 	margin-bottom: 10px;
@@ -37,11 +39,13 @@ ul {
 label {
     cursor: pointer;
 	display: list-item;
-	background: rgba(150, 200, 200, 0.4);
+	background: rgba(0,0,0, 0.4);
+    //background: rgba(150, 200, 200, 0.4);
 }
 
 .div2 {
-	background: rgba(150, 200, 200, 0.4);
+	background: rgba(0,0,0, 0.4);
+    //background: rgba(150, 200, 200, 0.4);
 	display: table;
 	width: 100%;
 	height: 60%;
@@ -50,13 +54,15 @@ label {
 #rad_1:checked + label, #rad_2:checked + label, #rad_3:checked + label, #rad_4:checked + label {
 	text-align: right;
     display: list-item;
-	background: rgba(150, 200, 200, 0.7);;
+	background: rgba(0,0,0, 0.7);
+    //background: rgba(150, 200, 200, 0.7);;
 	cursor: default;
 }
 
 #div_1, #div_2, #div_3, #div_4 {
     display: none;	
-	background: rgba(150, 200, 200, 0.7);	
+	background: rgba(0,0,0, 0.7);
+    //background: rgba(150, 200, 200, 0.7);	
 	width: 90%;
 }
 
