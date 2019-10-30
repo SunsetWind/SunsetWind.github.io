@@ -4,6 +4,7 @@ BODY {
 
 input { 
 	display: none;
+	margin: 0%;
 }
 
 h1 {
@@ -19,29 +20,44 @@ ul {
 	font-size: 20px;
 }
 
-.div1>input { 
-	display: none;
+.div1 {
+	text-align: center;
+    background: rgb(150, 200, 200);
+	height: 150px;
+	margin-bottom: 10px;
 }
 
-.div1>div {
-    display: none;
-    background: rgb(255,255,255);
-}
-
-.div1>label {
-    text-align: left;
-    background: rgb(200,200,200);
+label {
     cursor: pointer;
+	display: list-item;
+	background: rgb(150, 200, 200);
 }
 
-.div1>input:checked + label {
-    background: rgb(255,255,255);
+.div2 {
+	background: rgb(150, 200, 200);
+	display: table;
+	width: 100%;
+	height: 60%;
+}
+
+#rad_1:checked + label, #rad_2:checked + label, #rad_3:checked + label {
+	margin: 0px;
+	text-align: right;
+    display: list-item;
+	background: rgb(255,255,255);
+	cursor: default;
+}
+
+#div_1, #div_2, #div_3 {
+    display: none;	
+	background: rgb(150, 200, 200);	
+	width: 90%;
 }
 
 #rad_1:checked ~ #div_1,
 #rad_2:checked ~ #div_2,
 #rad_3:checked ~ #div_3 { 
-	display: inline-block;
-	position: fixed;
+	display: table-cell;
+	padding-left: 10px;
+	background: rgb(255,255,255);
 }
-
