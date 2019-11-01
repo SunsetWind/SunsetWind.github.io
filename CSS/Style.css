@@ -82,12 +82,14 @@ ul {
 
 label {
     cursor: pointer;
-	display: list-item;
-	background: rgba(0,0,0, 0.4);
+	display: block;
+	margin-bottom: 2px;
+	background: rgba(163, 69, 2, 0.7);
 }
 
 label:hover {
-	background: rgba(163, 69, 2, 0.7);
+	background: rgba(0,0,0, 0.7);
+	//background: rgba(163, 69, 2, 0.7);
 }
 
 .div2 {
@@ -98,9 +100,13 @@ label:hover {
 	height: 60%;
 }
 
+#rad_1, #rad_2, #rad_3, #rad_4 {
+	display: none;
+}
+
 #rad_1:checked + label, #rad_2:checked + label, #rad_3:checked + label, #rad_4:checked + label {
 	text-align: right;
-    display: list-item;
+    display: block;
 	background: rgba(0,0,0, 0.7);
     cursor: default;
 }
